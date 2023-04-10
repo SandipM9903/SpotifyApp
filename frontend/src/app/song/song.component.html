@@ -1,0 +1,41 @@
+<form [formGroup]="playlistForm" (ngSubmit)="addPlaylist()">
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="l"><strong>PLAYLIST ID</strong></label>
+      <input ngModel formControlName="playlistId" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1"><strong>PLAYLIST NAME</strong></label>
+      <input ngModel formControlName="playlistName" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1"><strong>SONG NAME</strong></label>
+        <input ngModel formControlName="songName" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1"><strong>SONG TYPE</strong></label>
+        <input ngModel formControlName="songType" type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    <button type="submit" class="btn btn-primary submit"><strong>CREATE PLAYLIST</strong></button>
+    <button type="submit" class="btn btn-primary submit" routerLink="/home"><strong>HOME</strong></button>
+</form>
+
+
+<div style="float: left;" class="col">
+    <div class="row">
+      <div class="card" style="width: 15rem;" *ngFor="let s of playlistData">
+        <div class="card-header">
+          SONG
+        </div>
+        <ul class="list-group list-group-flush"  style="background-color: lightgray;">
+          <li class="list-group-item" style="background-color: lightgray;">PLAYLIST NAME : {{s.playlistName}}</li>
+          <li class="list-group-item" >SONG NAME : {{s.songName}}</li>
+        </ul>
+        <br>
+        <button type="button" class="btn btn-success" (click)="play()">Play</button>
+        <br>
+        <button type="button" class="btn btn-danger" (click)="deletePlaylist(s.playlistId)">Delete</button>
+        <br>
+      </div>
+    </div>
+</div>

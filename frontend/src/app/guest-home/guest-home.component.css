@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    width: 1170px;
+    margin: auto;
+}
+
+.logo
+{
+    text-align: center;
+    margin-right: 50px;
+}
+
+header
+{
+    background-color: aqua;
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.welcome-text
+{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+}
+
+.welcome-text h1
+{
+    text-align: center;
+}
+
+.welcome-text a
+{
+    width: 100px;
+    text-decoration: none;
+}
+
+.welcome-text button
+{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+strong
+{
+    color: black;
+}

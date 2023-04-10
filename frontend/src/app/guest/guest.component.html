@@ -1,0 +1,22 @@
+<button type="button" class="btn btn-danger"><a routerLink="/guest-home"><strong>-></strong></a></button>
+
+<br>
+<br>
+<br>
+<br>
+
+<div style="float: left;" class="col">
+    <div class="row">
+      <div class="card" style="width: 15rem;" *ngFor="let s of playlistData">
+        <div class="card-header">
+          SONG
+        </div>
+        <ul class="list-group list-group-flush"  style="background-color: lightgray;">
+          <li class="list-group-item" style="background-color: lightgray;">PLAYLIST NAME : {{s.playlistName}}</li>
+          <li class="list-group-item" >SONG NAME : {{s.songName}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  

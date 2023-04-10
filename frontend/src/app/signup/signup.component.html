@@ -1,0 +1,28 @@
+<div class="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="text-center">
+                        <h1 class="ep">REGISTER</h1>
+                        <h6 class="ep">Please Register</h6>
+                    </div>
+                    <form>
+                        <form [formGroup]="userForm" (ngSubmit)="addUser()">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label ep">Enter UserName</label>
+                              <input ngModel formControlName="userName" type="userName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label ep">Password</label>
+                              <input ngModel formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-warning" (click)="addUser()">register</button>
+                            <button class="btn btn-primary" routerLink="/login">login</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.card {
+    margin: 20px;
+    background-color: lightgray;
+  }
+  
+  .list-group-item {
+    background-color: lightgray;
+  }
+
+  .submit
+  {
+    margin-top: 20px;
+    width: 80vh;
+    margin-left: 55vh;
+  }
+
+  label
+  {
+    margin-top: 5px;
+    margin-left: 90vh;
+  }
+
+  input
+  {
+    width: 90vh;
+    margin-left: 50vh;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: violet;
+  }
